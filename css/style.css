@@ -1,0 +1,433 @@
+:root {
+
+    --main-transtion: 0.4s;
+    --main-color:#f6d601;
+    --sectio-color:#23262d;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  /***************************************
+  start header
+  **************************************/
+  
+  .header {
+    padding:15px 0 ; 
+  }
+
+  .header .container img{
+    height: 30px;
+  }
+
+
+  .header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header .container .links ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  .header .container .links ul li {
+    margin-left: 15px;
+    padding: 10px 30px;
+  }
+  .header .container .links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #010101;
+    transition:var(--main-transtion);
+  }
+
+  .header .container .links a:hover{
+    color:var(--main-color) ;
+  }
+
+  
+  .header .container .links .special{
+    border-radius: 50px;
+    background-color: var(--main-color);
+  }
+  .header .container .links li .A:hover {
+    color: white;
+  }
+  .header .container .links .A{
+    text-transform: capitalize;
+  }
+
+  @media(maz-width:767px){
+   
+  }
+  /********************** end header***********************************************/
+
+  /********************* start landing********************************************/
+
+  .landing {
+    background-image: url(../image/banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landing .container .text h2{
+    font-size: 70px;
+    font-weight: bold;
+  }
+  .landing .container .text h3 {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Righteous', cursive;
+  }
+  .landing .container .text h4{
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: 900;
+  }
+
+  .landing .container .text p {
+    line-height: 1.8;
+    font-size: 17px;
+  }
+
+  .landing .container .text a{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #010101;
+    background-color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    transition: var(--main-transtion);
+
+  }
+
+  .landing .container .text a:hover{
+    background-color: var(--main-color);
+    border-radius: 30px;
+  }
+
+ 
+  /******************************** end landing***********************************************************/
+
+
+  /******************************start type car************************************************************/
+
+  .type_cars {
+    text-align: center;
+    padding: 70px;
+   background-color:    #23262d;
+}
+  }
+
+  .type_cars .container .text h2{
+    font-size: 55px;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+  }
+
+  .type_cars .container .text p{
+    color: #777;
+  }
+
+
+  .type_cars .container .cars{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px ,1fr));
+    gap: 70px;
+    padding-top: 50px;
+  }
+
+  .type_cars .container .cars img{
+    max-width: 100%;
+  }
+
+  .type_cars .container .type{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    background-color: var(--main-color);
+  }
+
+  .type_cars .container .type p{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
+  /***********************************end cars type********************************************************/
+
+  /*****************************start best cars************************************************************/
+
+  .bestcar{
+    background-image: url(../image/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+
+  
+
+  
+.form {
+  padding: 50px 0px 50px 40px;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+
+
+.form form{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 50%;
+}
+.form form h3{
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.form form select {
+  padding: 10px;
+  margin: 15px;
+}
+
+.form form input[type="text"]{
+  width: 94%;
+  margin-left: 16px;
+  height: 50px;
+}
+
+
+.form  a{
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #010101;
+  font-family: 'Righteous', cursive;
+  font-size: 18px;
+  transition: var(--main-transtion);
+
+}
+ .form a:hover{
+  background-color: var(--main-color);
+  border-radius: 30px;
+ }
+
+  
+  /****************************end best car****************************************************************/
+
+/****************************start why choose us************************************************************/
+.choose_us{
+  padding: 70px;
+  text-align: center;
+  color: white;
+  background-image: url(../image/type.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.choose_us:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--sectio-color);
+  opacity: 0.88;
+  z-index: -1;
+}
+
+ .text h2{
+  font-size: 55px;
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+  color: white;
+}
+
+.text{
+  padding-bottom: 70px;
+  
+}
+
+.box{
+  padding: 20px;
+
+}
+
+.box .A{
+  margin: 50px;
+  color: white;
+}
+
+.box span {
+  font-family: 25px;
+  padding: 30px;
+  background-color: #f6d601;
+  border-radius: 50%;
+  color: white;
+  border: 4px solid red;
+}
+/*****************************end why choose us**************************************************************/
+
+
+.customer  {
+  padding:100px;
+  text-align: center;
+  background-color: var(--sectio-color);
+}
+
+.customer .container .box .text{
+  padding: 30px;
+  background-color: white;
+  transform: skew(-20deg);
+
+}
+
+
+.customer .container h2 {
+  font-size: 45px;
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+}
+.customer .container .box img{
+  position: relative;
+  top: 50px;
+  z-index: 1;
+  left: 29px;
+}
+
+.customer .container .box .text p {
+  margin: 0;
+  line-height: 1.8;
+  color: #777;
+  font-size: 23px;
+}
+
+.customer .container .box .text .A {
+  font-size: 18px;
+  color: var(--main-color);
+  margin-top: -20px;
+}
+
+.customer .container .TT{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.customer .container span {
+  height: 15px;
+  border-radius: 30px;
+  width: 50px;
+  background-color: var(--main-color);
+  color: var(--main-color);
+  display: block;
+  margin: 10px 5px;
+  
+}
+/***************************end customer *************************************************************/
+
+/************************start call us ***************************************************************/
+
+.call_us{
+  padding: 50px;
+  text-align: center;
+
+}
+
+.call_us .container .text h3{
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+}
+
+.call_us .container .text p {
+  font-size: 50px;
+  color: var(--sectio-color);
+  font-weight: bold;
+  margin-top: 3px;
+}
+.call_us .container .text h1 {
+  color: var(--sectio-color);
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.call_us .container .text span{
+  color: var(--main-color);
+  font-weight: 900;
+}
+/**********************end call us**********************************************************************/
+
+/********************start footer***********************************************************************/
+.footer {
+  background-color: var(--sectio-color);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: var(--main-color);
+
+}
+/********************end footer**************************************************************************/
+  

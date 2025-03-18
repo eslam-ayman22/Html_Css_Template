@@ -1,0 +1,81 @@
+@media(max-width:767px){
+    .landing .container .text h2{
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .landing .container .text h3 {
+      font-size: 15px;
+      font-weight: 900;
+      font-family: 'Righteous', cursive;
+    }
+    .landing .container .text h4{
+      font-size: 10px;
+      color: var(--main-color);
+      font-weight: 900;
+    }
+  
+    .landing .container .text p {
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .header .container .links ul{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+      }
+
+      .type_cars .container .type{
+        flex-direction: column
+      }
+    
+   
+  }
+
+  @media(max-width:767px){
+    .form form{ 
+      padding: 20px;
+      display: block;
+      width: 100%;
+    }
+
+    .form form input[type="text"]{
+      width: 60%;
+    }
+
+    
+  }
+
+  /****************customer ********************************/
+  @media(max-width:767px){
+
+    .customer .container .box .text{
+      transform: skew(0deg)
+    
+    }
+
+    .customer .container .box .text p {
+      line-height: 0,5;
+      font-size: 20px;
+    }
+
+    .customer .container .box img{
+      z-index: 1;
+      left: 0px;
+      width: 150px
+    }
+    
+    
+  }
+
+  /*****************************footer **********************************************/
+
+  @media(max-width:767px){
+    .call_us .container .text p {
+      font-size: 25px;
+    }
+
+    .call_us .container .text h1 {
+      font-size: 25px;
+    }
+  }
